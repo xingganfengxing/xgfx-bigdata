@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0040)http://www.rabbitmq.com/admin-guide.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="googlebot" content="NOODP"><meta name="google-site-verification" content="nSYeDgyKM9mw5CWcZuD0xu7iSWXlJijAlg9rcxVOYf4"><meta name="google-site-verification" content="6UEaC3SWhpGQvqRnSJIEm2swxXpM5Adn4dxZhFsNdw0"><link rel="stylesheet" href="./01.Server Document_files/rabbit.css" type="text/css"><!--[if IE 6]>
+      <link rel="stylesheet" href="/css/rabbit-ie6.css" type="text/css" />
+      <![endif]--><link rel="icon" type="/image/vnd.microsoft.icon" href="http://www.rabbitmq.com/favicon.ico"><link rel="stylesheet" href="./01.Server Document_files/tutorial.css" type="text/css"><script type="text/javascript" async="" src="./01.Server Document_files/munchkin.js"></script><script type="text/javascript" async="" src="./01.Server Document_files/ga.js"></script><script type="text/javascript" src="./01.Server Document_files/site.js"></script><script type="text/javascript" src="./01.Server Document_files/ga-bootstrap.js"></script><script type="text/javascript" async="" src="./01.Server Document_files/munchkin(1).js"></script><title>RabbitMQ - Server Documentation</title>
+    
+  </head>
+  <body><div id="outerContainer"><div id="rabbit-logo"><a href="http://www.rabbitmq.com/"><img src="./01.Server Document_files/rabbitmq_logo_strap.png" alt="RabbitMQ" width="253" height="53"></a></div><div id="pivotal-logo"><a href="http://pivotal.io/"><img src="./01.Server Document_files/logo-pivotal-118x25.png" alt="Pivotal" width="118" height="25"></a></div><div id="nav-search"><div id="search-box"><form action="http://www.rabbitmq.com/search.html" method="get"><input type="text" name="q" size="25" id="search-query" value="Search RabbitMQ" onfocus="handle_SearchBoxFocus();" onblur="handle_SearchBoxBlur();"><input type="submit" id="search-button" alt="Search" value=""></form></div><ul class="mainNav"><li><a href="http://www.rabbitmq.com/features.html">Features</a></li><li><a href="http://www.rabbitmq.com/download.html">Installation</a></li><li><a href="http://www.rabbitmq.com/documentation.html" class="selected">Docs</a></li><li><a href="http://www.rabbitmq.com/getstarted.html">Tutorials</a></li><li><a href="http://www.rabbitmq.com/services.html">Support</a></li><li><a href="http://www.rabbitmq.com/community.html">Community</a></li><li><a href="http://pivotal.io/careers/engineering">Pivotal is Hiring</a></li><li><a href="http://www.rabbitmq.com/blog/">Blog</a></li></ul></div><div class="nav-separator"></div><div id="left-content"><h1>Server Documentation</h1>
+    <p class="intro">
+      RabbitMQ ships in a state where it can be used straight away in
+      simple cases - just start the server and it's ready to go. If
+      you have more complex needs you may need to adjust your server
+      configuration.
+    </p>
+
+    <div class="landing-box">
+      <h2>Configuring your Server</h2>
+      <ul>
+        <li>
+          How to <a href="http://www.rabbitmq.com/configure.html">configure</a> RabbitMQ:
+          configuration files and environment variables.
+        </li>
+        <li>
+          Configuring RabbitMQ to accept <a href="http://www.rabbitmq.com/ssl.html">SSL connections</a>.
+        </li>
+      </ul>
+    </div>
+
+    <div class="landing-box">
+      <h2>Management and Monitoring</h2>
+      <p>
+        RabbitMQ ships with:
+      </p>
+      <ul>
+        <li>
+          The <a href="http://www.rabbitmq.com/management.html">management plugin</a>: a web UI
+          and HTTP API for managing and monitoring RabbitMQ.<br>
+          See its <a href="https://cdn.rawgit.com/rabbitmq/rabbitmq-management/rabbitmq_v3_6_3/priv/www/api/index.html">HTTP API documentation</a> and its
+          <a href="http://www.rabbitmq.com/management-cli.html">command line interface,
+          rabbitmqadmin</a>.
+        </li>
+        <li>
+          <a href="http://www.rabbitmq.com/man/rabbitmqctl.1.man.html">rabbitmqctl</a>: a
+          simpler command line tool for managing RabbitMQ.
+        </li>
+      </ul>
+    </div>
+
+    <div class="landing-box">
+      <h2>Clustering and High Availability</h2>
+      <ul>
+        <li>
+          The different ways to <a href="http://www.rabbitmq.com/distributed.html">run RabbitMQ in a distributed environment</a>.
+        </li>
+        <li>
+          How to achieve <a href="http://www.rabbitmq.com/reliability.html">reliable message
+          delivery</a>.
+        </li>
+        <li>
+          How to <a href="http://www.rabbitmq.com/clustering.html">set up a RabbitMQ cluster</a>.
+        </li>
+        <li>
+          Configuring a RabbitMQ cluster to
+          use <a href="http://www.rabbitmq.com/ha.html">active-active highly available queues</a>.
+        </li>
+        <li>
+          Configuring a pair of RabbitMQ brokers in an active-passive
+          <a href="http://www.rabbitmq.com/pacemaker.html">highly available</a> configuration (legacy).
+        </li>
+      </ul>
+    </div>
+
+    <div class="landing-box">
+      <h2>Authentication and Authorisation</h2>
+      <ul>
+        <li>
+          How to <a href="http://www.rabbitmq.com/access-control.html">set up access
+          control</a> for the objects in your broker.
+        </li>
+        <li>
+          Configuring <a href="http://www.rabbitmq.com/authentication.html">SASL authentication</a>.
+        </li>
+        <li>
+          Configuring <a href="http://www.rabbitmq.com/passwords.html">password hashing algorithm</a>.
+        </li>        
+      </ul>
+    </div>
+
+    <div class="landing-box">
+      <h2>Operations</h2>
+      <ul>
+        <li>
+          <a href="http://www.rabbitmq.com/production-checklist.html">Production Checklist</a>: for those
+          moving into production.
+        </li>
+        <li>
+          <a href="http://www.rabbitmq.com/networking.html">Networking</a>: network tuning for various scenarios.
+        </li>
+        <li>
+          <a href="http://www.rabbitmq.com/alarms.html">Resource-driven alarms</a>.
+        </li>
+        <li>
+          Documentation on how RabbitMQ <a href="http://www.rabbitmq.com/memory.html">manages
+          memory</a>.
+        </li>
+      </ul>
+    </div>
+
+    <div class="landing-box">
+      <h2>Development and Troubleshooting</h2>
+      <ul>
+        <li>
+          <a href="http://www.rabbitmq.com/troubleshooting.html">Troubleshooting</a>.
+        </li>
+        <li>
+          <a href="http://www.rabbitmq.com/troubleshooting-ssl.html">Troubleshooting TLS-specific topics</a>.
+        </li>
+        <li>
+          <a href="http://www.rabbitmq.com/firehose.html">The Firehose</a> - trace messages as
+          they pass through your RabbitMQ server.
+        </li>
+      </ul>
+    </div>
+  </div><div id="right-nav"><div id="in-this-section"><h4>In This Section</h4><ul>
+     <li><a href="./01.Server Document_files/01.Server Document.htm" class="selected">Server Documentation</a><ul>
+       <li><a href="http://www.rabbitmq.com/configure.html">Configuration</a></li>
+       <li><a href="http://www.rabbitmq.com/ssl.html">TLS/SSL Support</a></li>
+       <li><a href="http://www.rabbitmq.com/distributed.html">Distributed RabbitMQ</a></li>
+       <li><a href="http://www.rabbitmq.com/reliability.html">Reliable Delivery</a></li>
+       <li><a href="http://www.rabbitmq.com/clustering.html">Clustering</a></li>
+       <li><a href="http://www.rabbitmq.com/ha.html">High Availability</a></li>
+       <li><a href="http://www.rabbitmq.com/pacemaker.html">High Availability (pacemaker)</a></li>
+       <li><a href="http://www.rabbitmq.com/access-control.html">Access Control (Authorisation)</a></li>
+       <li><a href="http://www.rabbitmq.com/production-checklist.html">Production Checklist</a></li>
+       <li><a href="http://www.rabbitmq.com/authentication.html">SASL Authentication</a></li>
+       <li><a href="http://www.rabbitmq.com/alarms.html">Alarms</a></li>
+       <li><a href="http://www.rabbitmq.com/networking.html">Networking</a></li>
+       <li><a href="http://www.rabbitmq.com/memory-use.html">Memory Use</a></li>
+       <li><a href="http://www.rabbitmq.com/lazy-queues.html">Lazy Queues</a></li>
+       <li><a href="http://www.rabbitmq.com/firehose.html">Firehose / Tracing</a></li>
+       <li><a href="http://www.rabbitmq.com/manpages.html">Manual Pages</a></li>
+       <li><a href="http://www.rabbitmq.com/windows-quirks.html">Windows Quirks</a></li>
+       
+       
+       
+       
+     </ul></li>
+     <li><a href="http://www.rabbitmq.com/clients.html">Client Documentation</a></li>
+     <li><a href="http://www.rabbitmq.com/plugins.html">Plugins</a></li>
+     <li><a href="http://www.rabbitmq.com/news.html">News</a></li>
+     <li><a href="http://www.rabbitmq.com/protocol.html">Protocol</a></li>
+     <li><a href="http://www.rabbitmq.com/extensions.html">Our Extensions</a></li>
+     <li><a href="http://www.rabbitmq.com/build.html">Building</a></li>
+     
+       <li><a href="http://www.rabbitmq.com/previous.html">Previous Releases</a></li>
+     
+     <li><a href="http://www.rabbitmq.com/mpl.html">License</a></li>
+   </ul></div><div id="related-links"><h4>Related Links</h4><ul><li><a href="http://www.rabbitmq.com/management.html">Management plugin</a></li><li><a href="http://www.rabbitmq.com/federation.html">Federation plugin</a></li><li><a href="http://www.rabbitmq.com/extensions.html">Our Extensions</a></li><li><a href="http://www.rabbitmq.com/changelog.html">Changelog</a></li></ul></div></div><div class="clear"></div><div class="pageFooter"><p class="righter"><a href="http://www.rabbitmq.com/sitemap.html">Sitemap</a> |
+        <a href="http://www.rabbitmq.com/contact.html">Contact</a></p><p id="copyright">
+        Copyright © 2007-2016 Pivotal Software, Inc. All rights reserved
+        |&nbsp;<a href="http://pivotal.io/privacy-policy">Privacy Policy</a>
+        |&nbsp;<a href="https://github.com/rabbitmq/rabbitmq-website/">This Site is Open Source</a>
+        |&nbsp;<a href="http://pivotal.io/careers/engineering">Pivotal is Hiring</a></p></div></div>
+
+</body></html>
